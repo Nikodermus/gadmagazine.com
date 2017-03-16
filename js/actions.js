@@ -1,9 +1,9 @@
 /*
 Global Actions Sheet
 
-  Author:   Author Name
-  Date:     DAY - MONTH - YEAR
-  Project:  Project Name
+  Author:   Nicolas M. Pardo
+  Date:     15 - MARCH - 2017
+  Project:  GadMagazine
 
 */
 
@@ -21,6 +21,18 @@ $(function () {
                 return false;
             }
         }
+    });
+});
+
+//Slider
+$(document).ready(function () {
+    var sudoSlider = $("#slider").sudoSlider({
+
+        autoHeight: false,
+        numeric: true,
+        auto: true,
+        pause: 10000,
+        speed: 500,
     });
 });
 

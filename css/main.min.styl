@@ -5,6 +5,13 @@
 @import 'nib'
 
 vendor-prefixes = webkit moz o ms official
+gadmblack = #222222
+gadmgray = #585858
+gadmyellow = #cbb813
+title = 'Keep Calm Med'
+body = 'Avenir'
+master = 1.35rem
+master-big = 3rem
 
 //Recommended font sizes
  f12 = 0.75rem
@@ -43,26 +50,45 @@ a:focus
         text-decoration none
         color inherit
 body
-    font-family sans-serif
+    font-family body, sans-serif
     font-size 1em
+    font-weight 300
     width 100%
     max-width 100vw
+    color #626262
 h1
 h2
 h3
 h4
 h5
 h6
-    font-weight bolder
+    font-weight 700
     margin 0
     padding 0
 img 
     width 100%
     max-width 100%
-    
+p
+    text-align justify
+    line-height 2
+//Mixins
+button-hover(n)
+    position relative
+    &:after
+        content ""
+        position absolute
+        height 5px
+        width 0
+        background n
+        bottom 0
+        left 0
+        z-index 10000
+    &:hover
+        &:after
+            width 100%
 //Special Classes
 .bold
-    font-weight bolder
+    font-weight 700
 .f0
     font-size f12 !important
 .f1
@@ -83,9 +109,64 @@ img
     font-size f119 !important
 .f9
     font-size f159 !important
+.gray
+    color gadmgray
+.yellow
+    color gadmyellow
+.white
+    color white
 .no-gutter
     padding-left 0
     padding-right 0
+.title
+    font-family title, sans-serif
+    font-weight 900
+    text-transform uppercase
+.space-left
+    padding-left master
+.space-right
+    padding-right master
+.space-top
+    padding-top master
+.space-bottom
+    padding-bottom master
+.title-left
+    padding-left master-big
+.title-right
+    padding-right master-big
+.title-top
+    padding-top master-big
+.title-bottom
+    padding-bottom master-big
+.no-padding
+    padding 0
+.cover
+    position relative
+    background blue
+    &:after
+        content ""
+        display block
+        padding-bottom 144%
+    
+//NAV
+nav
+    &.navbar-fixed-top
+        z-index 998
+    .navbar-brand
+        img
+            width 100px
+    .menu-icon
+        margin-right master
+footer
+    .row
+        border 2px solid gadmgray
+        display flex
+        a
+            width 25%
+            button-hover(gadmgray)
+        div
+            flex-direction column
+            padding master 0
 // Index
 section
     &.index
@@ -95,19 +176,77 @@ section
             > div
                 display flex
                 flex-direction column
-        .video--container
-            overflow hidden
-            background blue
-            position relative
-            z-index 10
-            align-content center
-            justify-content center
+            .video--container
+                overflow hidden
+                background gadmyellow
+                position relative
+                z-index 999
+                align-content center
+                justify-content center
+
+                video
+                    height  100vh
+                    position absolute
+                    left 0
+                    z-index -10
+                .fold--logo
+                    display flex
+                    max-width 100%
+                    justify-content center
+            .text--container
+                .slider--container
+                    #slider
+                        max-width 100%
+                        padding-right 2.5rem
+                        .slide
+                            &.current
+                                opacity 1
+                        h3
+                            padding 0 master
+                    .controls
+                        .numericControls
+                            text-align center
+                            li
+                                float none
+                                display inline-block
+                                &.current
+                                    a
+                                        background gadmgray
+                                a
+                                    background gray
+                                    border none
+                                    height 10px
+                                    max-width 10px
+                                    overflow hidden
+                                    padding 0 4px
+                                    span
+                                        font-size f12
+                                        color transparent
+                                        position relative
+                                        z-index -100
+                .button--container
+                    .button
+                        background gadmblack
+                        padding 1rem 0.5rem
+                        button-hover(gadmyellow)
+                        p
+                            margin 0
+        .latest
+            .latest-magazines
+                .cover
+                    span
+                        position absolute
+                        right master
+                        color gadmblack
+                        bottom 0
+            .all-magazines
+                .cover-small
+                    width 50%
+                    margin auto
+                    margin-top 25%
             
-        video
-            height  100vh
-            position absolute
-            left 0
-            z-index -10
+                    
+        
 // Media Query
  
 @media (min-width: 993px) //Desktop

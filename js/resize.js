@@ -8,14 +8,19 @@ $(window).load(function () {
         var elem = $(this);
         var elemWidth = $(this).width();
         var elemHeight = $(this).height();
-
-
+        var videoCont = $('.video--container').width();
+        var videoWidth = $('video').width();
+        
+        
+       
 
         if (elemWidth >= 993) {
             //Desktop
 
         } else {
             //Mobile 
+             $('video').css('left','-'+(videoWidth - videoCont)/2+'px')
+
         }
     });
     $(window).resize();
