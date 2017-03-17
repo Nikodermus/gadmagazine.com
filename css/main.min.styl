@@ -56,6 +56,7 @@ body
     width 100%
     max-width 100vw
     color #626262
+    background white
 h1
 h2
 h3
@@ -83,9 +84,30 @@ button-hover(n)
         bottom 0
         left 0
         z-index 10000
+        margin auto
     &:hover
         &:after
             width 100%
+//Animations
+
+@keyframes fadeIn {
+  from {
+    opacity : 0
+  }
+  to {
+    opacity : 1
+  }
+}
+//Animations
+
+@keyframes fadeOut {
+  from {
+    opacity : 1
+  }
+  to {
+    opacity : 0
+  }
+}
 //Special Classes
 .bold
     font-weight 700
@@ -149,14 +171,71 @@ button-hover(n)
         padding-bottom 144%
     
 //NAV
-nav
-    &.navbar-fixed-top
-        z-index 998
-    .navbar-brand
-        img
-            width 100px
-    .menu-icon
-        margin-right master
+.nav--container
+    nav
+        &.navbar-fixed-top
+            z-index 998
+        .navbar-brand
+           svg
+                width 100px
+                .fill
+                    fill gadmgray 
+        .menu-icon
+            margin-right master
+    .nav--open
+        background rgba(255, 255, 255, 0.84)
+        height 100vh
+        width 100vw
+        position fixed
+        top 0
+        left 0
+        margin-left 0
+        margin-right 0
+        transition 0.1s all
+        &.nav--show
+            z-index 1000
+            opacity 0
+        &.nav--hidden
+            opacity 0
+            z-index -1000
+        .menu--item
+            height calc(100vh / 8)
+            text-align center
+            display flex
+            align-items center
+            justify-content center
+            button-hover(gadmgray)
+            &:hover
+                background rgba(255, 255, 255, 0.38)
+                cursor pointer
+            &:after
+                left inherit
+            &.no-hover
+                cursor default
+                &:after
+                    display none
+                &:hover
+                    background transparent
+            svg
+                width 10rem
+                .fill
+                    fill gadmgray
+            .social-networks
+                opacity 0.7
+                width 100%
+                .social-button
+                    button-hover(gadmgray)
+                    &.instagram
+                        &:after
+                            left initial
+                            right 0
+            .close-menu
+                opacity .7
+                &:hover
+                    opacity 1
+    .open-menu
+    .close-menu
+        cursor pointer
 footer
     .row
         border 2px solid gadmgray
@@ -193,6 +272,9 @@ section
                     display flex
                     max-width 100%
                     justify-content center
+                    svg
+                        .fill
+                            fill white
             .text--container
                 .slider--container
                     #slider

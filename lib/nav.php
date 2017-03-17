@@ -1,41 +1,77 @@
-<div class="container-full">
+<div class="container-full nav--container">
     <div class="row">
         <!--Nav for Desktop-->
         <nav class="navbar col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-sm-down navbar-fixed-top no-padding">
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pull-xs-left">
-                <a class="navbar-brand" href="index.php"><img src="img/logo.svg" alt=""></a>
+                <a class="navbar-brand" href="index.php">
+                    <?php include 'lib/logo.php'; ?> </a>
             </div>
             <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 
-                <a href="javascript:;"><i class="title pull-xs-right space-top menu-icon">MENU</i></a>
+                <i class="title pull-xs-right space-top menu-icon open-menu">MENU</i>
             </div>
 
         </nav>
     </div>
-    <div class="row">
-        <!--Nav for tablet/mobile-->
-        <nav class="hidden-lg-up col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-md-up navbar-fixed-top">
-            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                <a class="" href="http://www.yourwebsite.com/"><img src="img/logo.svg" alt="Logo"></a>
+    <div class="row nav--open nav--hidden">
+
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-hover menu--item close-menu">
+            <a href="">
+                <?php include 'lib/logo.php'; ?>
+            </a>
+            </a>
+        </div>
+
+        <a href="">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu--item">
+                <h2 class="text-xs-center f2 title gray">Descargas</h2>
             </div>
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 pull-xs-right">
-                <span class="pull-xs-right" data-toggle="collapse" data-target="#navbarMobile">
-                    <i class="fa fa-bars h1"></i>
-                </span>
+        </a>
+        <a href="">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu--item">
+                <h2 class="text-xs-center f2 title gray">Nosotros</h2>
             </div>
-            <div class="row">
-                <div class="collapse" id="navbarMobile">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
-                        <a href="link1.php" class="nav-link">Link 1</a>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
-                        <a href="link2.php" class="nav-link">Link 2</a>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
-                        <a href="link3.php" class="nav-link">Link 3</a>
-                    </div>
+        </a>
+
+        <a href="">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu--item">
+                <h2 class="text-xs-center f2 title gray">Suscribete</h2>
+            </div>
+        </a>
+        <a href="">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu--item">
+                <h2 class="text-xs-center f2 title gray">Contacto</h2>
+            </div>
+        </a>
+        <a href="">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu--item">
+                <h2 class="text-xs-center f2 title gray">Legal</h2>
+            </div>
+        </a>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 no-hover menu--item">
+            <div class="row social-networks">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <a href="">
+                        <div class="f2 bold pull-xs-left social-button facebook">facebook</div>
+                    </a>
                 </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <a href="">
+                        <div class="f2 bold pull-xs-right social-button instagram">instagram</div>
+                    </a>
+                </div>
+
             </div>
-        </nav>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-hover menu--item">
+            <h2 class="text-xs-center f1 gray close-menu">
+                cerrar
+            </h2>
+        </div>
+
     </div>
 </div>

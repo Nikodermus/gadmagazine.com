@@ -20,7 +20,7 @@ $keywords = 'keywords, divided, by, commas' ;
                     <div class="row fold--logo">
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 text-xs-center">
 
-                            <img src="img/logo.svg" alt="" class="text-xs-center">
+                            <?php include 'lib/logo.php'; ?>
                         </div>
 
                     </div>

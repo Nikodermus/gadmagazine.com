@@ -36,6 +36,45 @@ $(document).ready(function () {
     });
 });
 
+//Nav
+
+var isOpen = "cerrado";
+
+function openMenu() {
+    $('.nav--open').removeClass('nav--hidden').addClass('nav--show');
+    $('.nav--show').css('animation', 'fadeIn .6s .1s forwards');
+    isOpen = "abierto";
+}
+
+function closeMenu() {
+    $('.nav--show').css('animation', 'fadeOut .6s forwards');
+    setTimeout(function () {
+        $('.nav--open').removeClass('nav--show').addClass('nav--hidden');
+    }, 200);
+    isOpen = "cerrado";
+}
+
+
+
+$(document).keyup(function (e) {
+
+    if (e.keyCode === 27) $('.close-menu').click();
+
+    if (e.keyCode === 77) {
+        if (isOpen === "abierto") {
+            $('.close-menu').click();
+        } else {
+            $('.open-menu').click();
+        }
+    }
+});
+
+$('.open-menu').click(openMenu);
+$('.close-menu').click(closeMenu);
+
+//Restart animation
+
+
 //Timing ends
 
 var end = new Date();
