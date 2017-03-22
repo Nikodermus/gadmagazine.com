@@ -24,8 +24,9 @@ $(function () {
     });
 });
 
-//Slider
+
 $(document).ready(function () {
+    //Slider
     var sudoSlider = $("#slider").sudoSlider({
 
         autoHeight: false,
@@ -34,6 +35,13 @@ $(document).ready(function () {
         pause: 10000,
         speed: 500,
     });
+    //Slider
+    setTimeout(function () {
+        $('body').addClass('loaded');
+    }, 4000);
+    setTimeout(function () {
+        $('#loader-wrapper'.css('display', 'none'))
+    }, 5000)
 });
 
 //Nav

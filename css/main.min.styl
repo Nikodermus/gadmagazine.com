@@ -98,16 +98,50 @@ button-hover(n)
     opacity : 1
   }
 }
-//Animations
 
 @keyframes fadeOut {
   from {
     opacity : 1
+   
   }
   to {
     opacity : 0
   }
 }
+
+@keyframes grow
+    0%
+        width 0
+        height 0
+        transform rotate(360deg)
+        opacity 0
+    40%
+        width 130px
+        height 130px
+    70%
+        width 160px
+        height 10px
+        transform rotate(0deg)
+    100%
+        height 130px
+        width 130px
+        
+       
+@keygrames color
+    0%
+        fill white
+    100%
+        fill gadmyellow
+        
+@keyframes spin
+    0%
+        transform rotate(360deg)
+
+    100%
+        transform rotate(-360deg)
+    
+        
+  
 //Special Classes
 .bold
     font-weight 700
@@ -326,6 +360,56 @@ section
                     width 50%
                     margin auto
                     margin-top 25%
+#loader-wrapper
+    position fixed
+    height 100vh
+    width 100vw
+    top 0
+    left 0
+    z-index 9997
+    .loader
+        display flex
+        height 100%
+        align-content center
+        justify-content center
+        .loader-section
+            position fixed
+            top 0
+            width 51vw
+            height 100vh
+            background gadmblack
+            z-index 9998
+            &.loader-section--left
+                left 0
+            &.loader-section--right
+                right 0
+        svg
+            &.triangle
+                transform translateY(0)
+                transition-duration .6s
+                align-self center
+                position relative
+                z-index 9999
+                fill white
+                transform-origin 50% 62%
+                animation color 0.3s forwards, grow 1s .3s ease forwards, spin 2s 1s ease  infinite 
+.loaded
+    #loader-wrapper
+        .loader
+            svg
+                width 130px
+                height 130px
+                animation color 0.3s forwards, grow 1s .3s ease forwards, spin 2s 1s ease  infinite, fadeOut 1s forwards
+                transform translateY(100%)
+                transition-duration .6s
+            .loader-section
+                &.loader-section--left
+                    transform translateX(-100%)
+                    transition all .7s .3s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+                &.loader-section--right
+                    transform translateX(100%)
+                    transition all .7s .3s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+
             
                     
         
