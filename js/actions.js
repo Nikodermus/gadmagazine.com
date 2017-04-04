@@ -38,10 +38,10 @@ $(document).ready(function () {
     //Slider
     setTimeout(function () {
         $('body').addClass('loaded');
-    }, 4000);
+    }, 1);
     setTimeout(function () {
-        $('#loader-wrapper'.css('display', 'none'))
-    }, 5000)
+        $('#loader-wrapper').css('display', 'none');
+    }, 2)
 });
 
 //Nav
