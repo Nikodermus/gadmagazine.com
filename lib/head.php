@@ -3,9 +3,10 @@
 <?php 
 $language = 'en_US' ;
 $site_name = 'The Website' ;
-$site_url = 'yourwebsite.com' ; 
+$site_url = 'yourwebsite.com' ;
+$title_pattern = ' | Dakio.co' ; //For all the titles to be similar ex. Home | Dakio.co
 $author = 'Author Name' ; 
-$year = '2017' ;
+$year = date("Y") ;
 $site_color = '#000000' ;
 $twitter_company = '@username' ;
 $twitter_author = '@wearedakio' ;
@@ -128,13 +129,20 @@ $google_site = '0000000000';
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-180x180.png">
 
     <!--Apple Load Image-->
-    <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
-    <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
-    <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
-    <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)">
-    <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-1024x768.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)">
-    <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
-    <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-2048x1496.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-320x460.png"
+        media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
+    <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-640x920.png"
+        media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-640x1096.png"
+        media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-768x1004.png"
+        media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)">
+    <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-1024x768.png"
+        media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)">
+    <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-1536x2008.png"
+        media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-2048x1496.png"
+        media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
 
     <!--Favicon-->
     <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
@@ -149,30 +157,15 @@ $google_site = '0000000000';
 	    <![endif]-->
 
     <title>
-        <?php echo $title ?>
+        <?php echo $title, $title_pattern; ?>
     </title>
 
-    <!--External Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.min.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/fonts/font.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/sudoslider.min.css" media="screen">
-
-    <!--Main Stylesheet-->
-    <link rel="stylesheet" href="css/main.min.css" media="screen" />
-
-    <!--jQuery-->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-    <!--Resizing -->
-    <script type="text/javascript" src="js/resize.js"></script>
-
+    <?php include 'links.php'?>
     <!--Google Analytics-->
     <script>
-        (function(i, s, o, g, r, a, m) {
+        (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
+            i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
@@ -187,7 +180,6 @@ $google_site = '0000000000';
         ga('create', '<?php echo $analytics_client ?>', 'auto', 'CLIENT');
         ga('send', 'pageview');
         ga('CLIENT.send', 'pageview');
-
     </script>
 </head>
 

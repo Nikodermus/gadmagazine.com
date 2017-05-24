@@ -25,24 +25,6 @@ $(function () {
 });
 
 
-$(document).ready(function () {
-    //Slider
-    var sudoSlider = $("#slider").sudoSlider({
-
-        autoHeight: false,
-        numeric: true,
-        auto: true,
-        pause: 10000,
-        speed: 500,
-    });
-    //Slider
-    setTimeout(function () {
-        $('body').addClass('loaded');
-    }, 1);
-    setTimeout(function () {
-        $('#loader-wrapper').css('display', 'none');
-    }, 2)
-});
 
 //Nav
 
@@ -80,7 +62,40 @@ $(document).keyup(function (e) {
 $('.open-menu').click(openMenu);
 $('.close-menu').click(closeMenu);
 
-//Restart animation
+//PDF Object
+function pdfObject() {
+    var options = {
+        pdfOpenParams: {
+            view: 'Fit'
+        }
+    };
+
+    PDFObject.embed("docs/cactus-preview.pdf", ".cactus-preview", options);
+}
+$(document).ready(function () {
+    //Slider
+    var sudoSlider = $("#slider").sudoSlider({
+
+        autoHeight: false,
+        numeric: true,
+        auto: true,
+        pause: 10000,
+        speed: 500,
+    });
+    //PreLoader
+    setTimeout(function () {
+        $('body').addClass('loaded');
+    }, 1);
+    setTimeout(function () {
+        $('#loader-wrapper').css('display', 'none');
+    }, 2)
+
+    //Autogrow
+    $("textarea").autoGrow();
+
+    //Callback
+    pdfObject();
+});
 
 
 //Timing ends

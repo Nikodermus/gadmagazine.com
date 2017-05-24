@@ -207,18 +207,24 @@ hover-center()
     margin 0
 .cover
     position relative
-    background blue
+    background-size cover
+    background-position center center
+    background gadmgray
     &:after
         content ""
         display block
         padding-bottom 144%
+    &.cactus
+        background-image url('../img/cactus.jpg')        
 .square
     position relative
-    background blue
+    background gadmgray
     &:after
         content ""
         display block
         padding-bottom 100%
+.o-visible
+    overflow visible !important
     
 //NAV
 .nav--container
@@ -235,6 +241,7 @@ hover-center()
             display flex
             max-height 100%
             svg
+            img
                 width 100px
                 .fill
                     fill gadmgray 
@@ -278,6 +285,7 @@ hover-center()
                 &:hover
                     background transparent
             svg
+            img
                 width 10rem
                 .fill
                     fill gadmgray
@@ -309,6 +317,15 @@ footer
             padding master 0
 // Index
 section
+    min-height 100vh
+    &.revistas
+        margin-top 4rem
+        .preview
+            min-height calc(100vh - 50px)
+            display table
+            embed 
+                height calc(100vh - 50px) !important
+                display table-cell
     &.index
         .fold
             height 100vh
@@ -334,6 +351,7 @@ section
                     max-width 100%
                     justify-content center
                     svg
+                    img
                         .fill
                             fill white
             .text--container
@@ -377,11 +395,20 @@ section
         .latest
             .latest-magazines
                 .cover
+                    background-size cover
+                    background-position center center
+                    &.cactus
+                        background-image url('../img/cactus.jpg')
+                        
                     span
                         position absolute
                         right master
                         color gadmblack
                         bottom 0
+                
+                    
+                    
+
             .all-magazines
                 .cover-small
                     width 50%
@@ -401,7 +428,8 @@ section
             left 0
             top 4rem
             .magazine
-                background green
+                background-size cover
+                background-position center center
             .current--info
                 p.f2
                     letter-spacing 10px
@@ -411,6 +439,7 @@ section
             .current--title
                 position relative
                 left -150%
+                z-index 999
                 h1
                     letter-spacing 7px
                     line-height 1
@@ -428,7 +457,6 @@ section
                     &.right
                         hover-right()
     &.nosotros
-        
         .fold
             height 100vh
             min-height 100vh
@@ -439,7 +467,12 @@ section
             .fold--image
                 height 100%
                 overflow hidden
-                background gadmyellow
+                background-size cover
+                background-position center center
+                background-image url('../img/cactus.jpg')
+                background-color yellow
+                background-blend-mode multiply 
+                
                 position relative
                 z-index 999
                 .fold--logo
@@ -447,11 +480,14 @@ section
                     display flex
                     justify-content center
                     align-content center
+                    //background gadmyellow
+
                     .logo--container
                         display flex
                         justify-content center
                         align-content center
                         svg
+                        img
                             width 100%
                             .fill
                                 fill white
@@ -459,7 +495,7 @@ section
                 //padding-top 4rem
                 .front
                     position relative
-                    z-index 1000
+                    z-index 999
                     h2
                         padding-top 2rem
                 .link
@@ -471,8 +507,10 @@ section
             .staff--member
                 .logo--container
                     svg
+                    img
                         text-align center
-                        width 50%
+                        width auto
+                        height 3rem
                         margin auto
                         .fill
                             fill gray
@@ -493,6 +531,42 @@ section
             padding master
             padding-left 5vw
             border 2px solid gadmgray
+            .form
+                label
+                    width 100%
+                    font-weight bolder
+                    margin-bottom 0
+                    padding-left .5rem
+                    &.f0
+                        width auto
+                        float left
+                        position relative
+                        top -.5rem
+                        padding-right 15px
+                textarea
+                input
+                    width 100%
+                    border 0
+                    border-bottom 2px solid gadmgray
+                    background transparent
+                    margin-bottom 1rem
+                    outline
+                    &[type="submit"]
+                        width auto
+                        border-bottom 0
+                        &:hover
+                            opacity .7
+                    &[type="checkbox"]
+                        width auto
+                        float left
+                        position relative
+                        top -.5rem
+                    &:focus
+                    &:hover
+                        outline 0
+                textarea
+                    margin-bottom 2rem
+                    min-height 0 !important
         
                 
                     

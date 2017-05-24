@@ -4,7 +4,7 @@
         <nav class="navbar col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-sm-down navbar-fixed-top no-padding">
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pull-xs-left">
                 <a class="navbar-brand" href="index.php">
-                    <?php include 'lib/logo.php'; ?> </a>
+                    <img src="img/logo.svg" alt=""></a>
             </div>
             <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 
@@ -17,34 +17,34 @@
 
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-hover menu--item close-menu">
-            <a href="">
-                <?php include 'lib/logo.php'; ?>
+            <a href="index.php">
+                <img src="img/logo.svg" alt="">
             </a>
             </a>
         </div>
 
-        <a href="">
+        <a href="descargas.php">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu--item">
                 <h2 class="text-xs-center f2 title gray">Descargas</h2>
             </div>
         </a>
-        <a href="">
+        <a href="nosotros.php">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu--item">
                 <h2 class="text-xs-center f2 title gray">Nosotros</h2>
             </div>
         </a>
 
-        <a href="">
+        <a href="javascript:void(0);">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu--item">
                 <h2 class="text-xs-center f2 title gray">Suscribete</h2>
             </div>
         </a>
-        <a href="">
+        <a href="contacto.php">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu--item">
                 <h2 class="text-xs-center f2 title gray">Contacto</h2>
             </div>
         </a>
-        <a href="">
+        <a href="legal.php">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu--item">
                 <h2 class="text-xs-center f2 title gray">Legal</h2>
             </div>
@@ -53,12 +53,12 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 no-hover menu--item">
             <div class="row social-networks">
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <a href="">
+                    <a href="https://www.facebook.com/gadmagazine">
                         <div class="f2 bold pull-xs-left social-button facebook">facebook</div>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <a href="">
+                    <a href="https://www.instagram.com/GADMagazine/">
                         <div class="f2 bold pull-xs-right social-button instagram">instagram</div>
                     </a>
                 </div>

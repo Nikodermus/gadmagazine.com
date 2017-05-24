@@ -4,6 +4,8 @@
 
 <!--SudoSlider-->
 <script type="text/javascript" src="js/jquery.sudoSlider.min.js"></script>
+<script type="text/javascript" src="js/jquery.autogrowtextarea.min.js"></script>
+<script type="text/javascript" src="js/pdfobject.min.js"></script>
 <!--Custom Scripts-->
 <script type="text/javascript" src="js/actions.js"></script>
 </body>

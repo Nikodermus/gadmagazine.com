@@ -12,11 +12,9 @@ $keywords = 'keywords, divided, by, commas' ;
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 video--container no-gutter">
 
                     <video autoplay loop poster="img/nikodermus_media.jpg" id="bgvid">
-     <source src="video/gahdm-background-video.webm" 
-             type="video/webm">
-     <source src="video/gadm-background-video.mp4" 
-             type="video/mp4">
-    </video>
+                        <source src="video/gahdm-background-video.webm" type="video/webm">
+                        <source src="video/gadm-background-video.mp4" type="video/mp4">
+                    </video>
                     <div class="row fold--logo">
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 text-xs-center">
 
@@ -36,7 +34,9 @@ $keywords = 'keywords, divided, by, commas' ;
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1">
                         <h2 class="f2 text-xs-center space-top space-bottom gray">Lorem Ipsum</h2>
-                        <p class="space-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolor velit, magnam minima repudiandae, minus labore dolore praesentium eos consectetur aliquid iusto illum cumque? Impedit asperiores numquam, minus reprehenderit saepe!</p>
+                        <p class="space-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolor velit, magnam minima repudiandae,
+                            minus labore dolore praesentium eos consectetur aliquid iusto illum cumque? Impedit asperiores
+                            numquam, minus reprehenderit saepe!</p>
                     </div>
                     <div class="row slider--container space-bottom">
                         <div id="slider">
@@ -57,7 +57,7 @@ $keywords = 'keywords, divided, by, commas' ;
                     </div>
                     <div class="row button--container">
                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 offset-lg-2">
-                            <a href="">
+                            <a href="docs/cactus.pdf" target="_blank">
                                 <div class="button">
                                     <p class=" text-xs-center bold f2 white">Descarga la ultima edición</p>
                                 </div>
@@ -79,10 +79,12 @@ $keywords = 'keywords, divided, by, commas' ;
                 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
                     <div class="row latest-magazines title-top">
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="cover">
-                                <span class="f6 title">#1</span>
-                            </div>
-                            <p class="text-xs-center space-top">cactús</p>
+                            <a href="cactus.php">
+                                <div class="cover cactus">
+                                    <span class="f6 title">#1</span>
+                                </div>
+                                <p class="text-xs-center space-top">cactús</p>
+                            </a>
                         </div>
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 

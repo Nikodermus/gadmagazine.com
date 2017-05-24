@@ -10,16 +10,16 @@
 
 <footer class="space-top space-bottom">
     <div class="row f1 text-xs-center title  gray">
-        <a href="">
+        <a href="descargas.php">
             <div>Descargas</div>
         </a>
-        <a href="">
+        <a href="contacto.php">
             <div>Contacto</div>
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/lauritacubillosrico/">
             <div>Lauri</div>
         </a>
-        <a href="">
+        <a href="http://nikodermus.media/">
             <div>Ndermus</div>
         </a>
     </div>
