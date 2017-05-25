@@ -1,6 +1,6 @@
 <?php 
 //This meta info should change for each page
-$title = 'Title' ; 
+$title = 'Nosotros' ; 
 $description = 'Description' ; 
 $keywords = 'keywords, divided, by, commas' ; 
     include 'lib/head.php';  include 'lib/nav.php'; ?>
@@ -25,9 +25,12 @@ $keywords = 'keywords, divided, by, commas' ;
                         </div>
                         <div class="con-xs-12 col-sm-12 col-md-12 col-lg-8 offset-xs-2">
                             <h1 class="bold text-xs-center f2 title-top title-bottom">Hecho con &lt;3 y Adobe</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, facere. Similique voluptatem
-                                cumque, magni debitis quos saepe molestiae autem ipsam, soluta excepturi accusantium fuga
-                                earum minima nam. Cumque, nisi, aliquid.</p>
+                            <p>GADMagazine es un proyecto inspirado en BAK Magazine. Donde buscamos hacer del mundo un lugar
+                                más rico en experiencias visuales y ayudar a plantar las semillas de nuevos talentos. Nuestro
+                                propósito es extendernos por todo el mundo, con el fin de cautivar a las personas sin importar
+                                quienes son, donde se encuentran, y a que se dedican. Lo que buscamos es romper las fronteras
+                                que nos limitan, y así mostrar la gran diversidad que tenemos en todo el mundo.
+                            </p>
                         </div>
 
 
@@ -66,6 +69,14 @@ $keywords = 'keywords, divided, by, commas' ;
                             <h2 class="f3 text-xs-center space-top">LAURA CUBILLOS</h2>
                             <p class="text-xs-center no-margin">Diseñador Gráfico</p>
                             <div class="row">
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    Diseñadora Visual, editora en jefe e investigadora del mundo del arte.. Para mi es muy importante que todos estemos enterados
+                                    de lo que pasa al otro lado del mundo, ya que creo que de alguna forma todos tenemos
+                                    algo en común. Solo quiero invitarte a romper fronteras y que nos acompañes en esta aventura.
+
+                                </div>
+
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 space-top space-bottom text-xs-center logo--container">
                                     <img src="img/lauri.svg" alt="">
                                 </div>
@@ -102,6 +113,14 @@ $keywords = 'keywords, divided, by, commas' ;
                             <h2 class="f3 text-xs-center space-top">NICOLAS M. PARDO</h2>
                             <p class="text-xs-center no-margin">Desarrollador UX</p>
                             <div class="row">
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    Diseñador de interfaces, desarrollador y alguien que le gusta hacer cosas en computadora. A cargo del desarrollo creativo
+                                    y técnico del sitio que visitas; Además soy la mano derecha en la edición final del producto
+                                    que lees.
+
+                                </div>
+
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 space-top space-bottom text-xs-center logo--container">
                                     <img src="img/nikodermus.svg" alt="">
                                 </div>

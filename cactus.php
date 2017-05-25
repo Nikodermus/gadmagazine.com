@@ -1,5 +1,5 @@
 <?php 
-$title = 'Title' ; 
+$title = 'Cactus' ; 
 $description = 'Description' ; 
 $keywords = 'keywords, divided, by, commas' ; 
     include 'lib/head.php';  include 'lib/nav.php'; ?>

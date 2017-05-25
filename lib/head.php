@@ -4,7 +4,7 @@
 $language = 'en_US' ;
 $site_name = 'The Website' ;
 $site_url = 'yourwebsite.com' ;
-$title_pattern = ' | Dakio.co' ; //For all the titles to be similar ex. Home | Dakio.co
+$title_pattern = ' | GADMagazine' ; //For all the titles to be similar ex. Home | Dakio.co
 $author = 'Author Name' ; 
 $year = date("Y") ;
 $site_color = '#000000' ;

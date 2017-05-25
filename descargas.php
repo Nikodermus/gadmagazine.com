@@ -1,6 +1,6 @@
 <?php 
 //This meta info should change for each page
-$title = 'Title' ; 
+$title = 'Descargas' ; 
 $description = 'Description' ; 
 $keywords = 'keywords, divided, by, commas' ; 
     include 'lib/head.php';  include 'lib/nav.php'; ?>
@@ -26,9 +26,10 @@ $keywords = 'keywords, divided, by, commas' ;
                                 </h1>
                             </div>
 
-                            <p class="f0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam esse laudantium consequatur,
-                                et possimus assumenda, magni amet blanditiis, eveniet soluta nihil, velit illum delectus
-                                autem. Sequi, impedit dicta fugiat maiores!</p>
+                            <p class="f0">El sonido de las cuerdas y la letra de nuestros poemas, es como viajar a otro lugar. El cactus
+                                pronto florece, y Afganistán nos da conocer su cultura, y su arte. Ven y conoce un Afganistán
+                                diferente donde nunca se apagan las brillantes luces, que el arte coloca por doquier.
+                            </p>
                             <p class="text-xs-center"><a href="cactus.php">Preview En linea</a></p>
                             <p class="text-xs-center">Descarga
                                 <a href="docs/cactus.pdf" target="_blank"></a>

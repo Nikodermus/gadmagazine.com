@@ -1,6 +1,6 @@
 <?php 
 //This meta info should change for each page
-$title = 'Title' ; 
+$title = 'Inicio' ; 
 $description = 'Description' ; 
 $keywords = 'keywords, divided, by, commas' ; 
    include 'lib/head.php'; include 'lib/nav.php'; ?>
@@ -33,10 +33,12 @@ $keywords = 'keywords, divided, by, commas' ;
 
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1">
-                        <h2 class="f2 text-xs-center space-top space-bottom gray">Lorem Ipsum</h2>
-                        <p class="space-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolor velit, magnam minima repudiandae,
-                            minus labore dolore praesentium eos consectetur aliquid iusto illum cumque? Impedit asperiores
-                            numquam, minus reprehenderit saepe!</p>
+                        <h2 class="f2 text-xs-center space-top space-bottom gray title">GADMagazine</h2>
+                        <p class="space-bottom">GADMagazine es una revista para los ciudadanos del mundo que busca explorar el diseño, el arte, y
+                            la creación de cada país por medio de nuevos exponentes, dándole al mundo una visión actual de
+                            la trascendencia artística del mundo. Explora, conoce, entérate y se parte de nuestra revista
+                            hoy.
+                        </p>
                     </div>
                     <div class="row slider--container space-bottom">
                         <div id="slider">
