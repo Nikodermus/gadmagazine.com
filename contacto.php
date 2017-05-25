@@ -13,9 +13,9 @@ $keywords = 'keywords, divided, by, commas' ;
                     <p class=" title text-xs-right space-left">!Hola!</p>
                 </div>
 
-                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 form--container offset-xs-3">
+                <div class="con-xs-12 col-sm-12 col-md-12 col-lg-8 form--container offset-xs-3">
                     <div class="row">
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-5">
+                        <div class="con-xs-12 col-sm-12 col-md-12 col-lg-5">
                             <p class="text-xs-left bold space-bottom">
                                 GADMagazine es un proyecto pensado para todos, sin ánimo de lucro por lo que no publicitamos.
 
@@ -31,17 +31,17 @@ $keywords = 'keywords, divided, by, commas' ;
                             </p>
 
                         </div>
-                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-7 form">
+                        <div class="con-xs-12 col-sm-12 col-md-12 col-lg-7 form">
                             <form action="">
                                 <div class="row">
-                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-8">
+                                    <div class="con-xs-12 col-sm-12 col-md-12 col-lg-8">
                                         <label class="title" for="name">Nombre</label>
                                         <input class="f1" type="text" id="name">
                                     </div>
 
                                 </div>
                                 <div class="row">
-                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-8">
+                                    <div class="con-xs-12 col-sm-12 col-md-12 col-lg-8">
                                         <label class="title" for="email">E-mail</label>
                                         <input class="f1" type="email" id="email">
                                         <div class="row pull-xs-right">

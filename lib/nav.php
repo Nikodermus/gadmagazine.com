@@ -2,11 +2,11 @@
     <div class="row">
         <!--Nav for Desktop-->
         <nav class="navbar col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-sm-down navbar-fixed-top no-padding">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pull-xs-left">
+            <div class="con-xs-12 col-sm-12 col-md-12 col-lg-4 pull-xs-left">
                 <a class="navbar-brand" href="index.php">
                     <img src="img/logo.svg" alt=""></a>
             </div>
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="con-xs-12 col-sm-12 col-md-12 col-lg-8">
 
                 <i class="title pull-xs-right space-top menu-icon open-menu">MENU</i>
             </div>
@@ -52,12 +52,12 @@
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 no-hover menu--item">
             <div class="row social-networks">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="con-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <a href="https://www.facebook.com/gadmagazine">
                         <div class="f2 bold pull-xs-left social-button facebook">facebook</div>
                     </a>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="con-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <a href="https://www.instagram.com/GADMagazine/">
                         <div class="f2 bold pull-xs-right social-button instagram">instagram</div>
                     </a>

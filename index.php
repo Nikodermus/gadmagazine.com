@@ -9,14 +9,14 @@ $keywords = 'keywords, divided, by, commas' ;
     <article>
         <div class="container-fluid">
             <div class="row fold">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 video--container no-gutter">
+                <div class="con-xs-12 col-sm-12 col-md-12 col-lg-6 video--container no-gutter">
 
                     <video autoplay loop poster="img/nikodermus_media.jpg" id="bgvid">
                         <source src="video/gahdm-background-video.webm" type="video/webm">
                         <source src="video/gadm-background-video.mp4" type="video/mp4">
                     </video>
                     <div class="row fold--logo">
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 text-xs-center">
+                        <div class="con-xs-12 col-sm-12 col-md-12 col-lg-4 text-xs-center">
 
                             <?php include 'lib/logo.php'; ?>
                         </div>
@@ -25,9 +25,9 @@ $keywords = 'keywords, divided, by, commas' ;
 
 
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text--container">
+                <div class="con-xs-12 col-sm-12 col-md-12 col-lg-6 text--container">
                     <div class="row">
-                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <div class="con-xs-12 col-sm-12 col-md-12 col-lg-8">
                             <p class="title f1 space-top space-left">LA REVISTA DIGITAL DE TO(DOS)</p>
                         </div>
 
@@ -56,7 +56,7 @@ $keywords = 'keywords, divided, by, commas' ;
 
                     </div>
                     <div class="row button--container">
-                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 offset-lg-2">
+                        <div class="con-xs-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2">
                             <a href="docs/cactus.pdf" target="_blank">
                                 <div class="button">
                                     <p class=" text-xs-center bold f2 white">Descarga la ultima edición</p>
@@ -76,9 +76,9 @@ $keywords = 'keywords, divided, by, commas' ;
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <h3 class="f2 bold space-left  ">Últimos lanzamientos</h3>
                 </div>
-                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <div class="con-xs-12 col-sm-12 col-md-12 col-lg-8">
                     <div class="row latest-magazines title-top">
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="con-xs-12 col-sm-12 col-md-12 col-lg-4">
                             <a href="cactus.php">
                                 <div class="cover cactus">
                                     <span class="f6 title">#1</span>
@@ -86,17 +86,17 @@ $keywords = 'keywords, divided, by, commas' ;
                                 <p class="text-xs-center space-top">cactús</p>
                             </a>
                         </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="con-xs-12 col-sm-12 col-md-12 col-lg-4">
 
                         </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="con-xs-12 col-sm-12 col-md-12 col-lg-4">
 
                         </div>
 
 
                     </div>
                 </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 all-magazines" hidden>
+                <div class="con-xs-12 col-sm-12 col-md-12 col-lg-4 all-magazines" hidden>
                     <div class="cover cover-small"></div>
                     <p class="text-xs-center space-top">Todas las ediciones</p>
                 </div>
