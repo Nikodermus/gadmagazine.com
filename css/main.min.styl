@@ -95,6 +95,11 @@ hover-right()
 hover-center()
     &:after
         left inherit
+parallax(img)
+    background-size cover
+    background-position center center
+    background-attachment fixed
+    background-image url(img) 
 //Animations
 
 @keyframes fadeIn {
@@ -316,6 +321,7 @@ footer
             flex-direction column
             padding master 0
 // Index
+/*
 section
     min-height 100vh
     &.revistas
@@ -414,6 +420,7 @@ section
                     width 50%
                     margin auto
                     margin-top 25%
+                    */
     &.ediciones
         height 100%
         margin-bottom 4rem
@@ -635,3 +642,24 @@ section
     .hidden-xs
         display none
     section
+        &.index
+            .fold
+                > div
+                    display flex
+                    align-items center
+                .video--container
+                    overflow visible
+                    height 100vh
+                    width 100vw
+                    position relative
+                    parallax('../img/gadm-background-video.gif')
+                    video
+                        display none
+                    .fold--logo
+                        width 100%
+                        margin-left 0
+                        margin-right 0
+                        img
+                        svg
+                            .fill
+                                fill white
